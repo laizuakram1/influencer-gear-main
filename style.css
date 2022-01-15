@@ -3,10 +3,10 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Oxygen', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5d5;
 }
 .container{
@@ -22,7 +22,14 @@ font-family: 'Roboto', sans-serif;
     padding:5px 20px;
     color:white;
     text-decoration:none;
+    transition:all 0.3s;
     
+}
+.primary-btn:hover{
+    background-color: transparent;
+    border: 1px solid tomato;
+    border-radius:30px;
+    color:black;
 }
 
 /* header style  */
@@ -64,19 +71,26 @@ nav {
    
 }
 .influencer-banner img{
-    width:420px;
-    height:380px;
+    width:410px;
+    height:360px;
     border-radius: 10px;
 }
+
 /* popular product style */
 .products{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 25px;
     grid-row-gap: 40px;
+    
 }
 .single-product{
     box-shadow: 3px 5px 15px grey;
+    border-radius: 8px;
+    transition:all 0.3s;
+}
+.single-product:hover{
+    background:#ddd;
 }
 .product-title{
     text-align:center;
@@ -111,4 +125,48 @@ nav {
     font-size:14px;
    
 }
+.product-btn{
+    margin-top:50px;
+    position:relative;
+    left: 85%; 
+    width: 160px;
+    text-align: center;
+}
+.product-btn i{
+    margin-left:5px;
+}
+
+/* review style */
+
+.Customer-Review{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap:20px;
+    position:relative;
+}
+.single-review img{
+    width:100%;
+    height:100%;
+    position:relative;
+    border-radius:8px;
+}
+.single-review p{
+    display:none;
+    position: absolute;
+    top: 30px;
+    width: 200px;
+    color: tomato;
+    padding-left: 20px;
+    font-size:20px;
+    
+}.single-review:hover img{
+    opacity:0.6;
+}
+.single-review:hover p{
+    display:block;
+}
+
+
+
+
 
